@@ -1,0 +1,28 @@
+@use './fonts' as *;
+@use '../sass/colors' as *;
+@use './animations' as *;
+@use '../sass/small' as *;
+@use '../sass/medium' as *;
+@use '../sass/large' as *;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: $regular, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: $white;
+    background-color: $dark;   
+}
+
