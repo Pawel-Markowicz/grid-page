@@ -177,4 +177,16 @@ h1.company-name {
 .nav__link::before:hover::before {
   -webkit-animation: pulse 1s;
           animation: pulse 1s;
+}
+
+@media (min-width: 992px) {
+  .header {
+    display: grid;
+    grid-template-rows: auto repeat(2, 1fr);
+  }
+  .header__text {
+    display: grid;
+    grid-row: 2/4;
+    grid-column: 1/2;
+  }
 }/*# sourceMappingURL=style.css.map */

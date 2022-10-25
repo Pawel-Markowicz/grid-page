@@ -1,9 +1,6 @@
-@use './fonts' as *;
-@use '../sass/colors' as *;
-@use './animations' as *;
-@use '../sass/small' as *;
-@use '../sass/medium' as *;
-@use '../sass/large' as *;
+@import '../sass/fonts';
+@import '../sass/colors';
+@import '../sass/animations';
 
 *,
 *::before,
@@ -100,6 +97,7 @@ h1.company-name {
 	}
 }
 
+
 .hamburger {
 	position: absolute;
 	top: 3em;
@@ -173,3 +171,8 @@ h1.company-name {
 		}
 	}
 }
+
+
+@import '../sass/small';
+@import '../sass/medium';
+@import '../sass/large';
