@@ -208,7 +208,7 @@ body {
 
 h1.company-name {
   margin-bottom: 0.5em;
-  font-size: 3rem;
+  font-size: 6rem;
   font-family: "cinzelregular";
   color: #d6c78e;
 }
@@ -405,5 +405,10 @@ h1.company-name {
   }
   .hamburger {
     display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .header__text p {
+    font-size: 2.2rem;
   }
 }/*# sourceMappingURL=style.css.map */

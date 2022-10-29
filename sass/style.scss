@@ -189,6 +189,8 @@ $regular-bold: 'ralewayextrabold';
 
 
 
+		//  -------------  MAIN CODE------------- 
+
 *,
 *::before,
 *::after {
@@ -211,7 +213,7 @@ body {
 
 h1.company-name {
 	margin-bottom: 0.5em;
-	font-size: 3rem;
+	font-size: 6rem;
 	font-family: $logo;
 	color: $gold;
 }
@@ -446,5 +448,15 @@ h1.company-name {
 
 	.hamburger{
 		display: none;
+	}
+}
+
+@media (min-width: 1200px){
+	.header{
+		&__text{
+			p{
+				font-size: 2.2rem;
+			}
+		}
 	}
 }
