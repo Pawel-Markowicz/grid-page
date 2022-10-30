@@ -438,19 +438,20 @@ h1.company-name {
 		&__box{
 			grid-template-columns: auto;
 			gap: 1em;
+			padding: 10em 2em;
 		}
 
 		&__card--one{
 			grid-column: 1/2;
-			grid-row: 1;
+			grid-row: 1/2;
 		}
 		&__card--two{
 			grid-column: 2/3;
-			grid-row: 1;
+			grid-row: 1/2;
 		}
 		&__card--three{
 			grid-column: 3/4;
-			grid-row: 1;
+			grid-row: 1/2;
 		}
 	}
 }
