@@ -383,6 +383,27 @@ h1.company-name {
   grid-column: 1/-1;
 }
 
+@media (min-width: 768px) {
+  .cards {
+    display: grid;
+  }
+  .cards__box {
+    grid-template-columns: auto;
+    gap: 1em;
+  }
+  .cards__card--one {
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+  .cards__card--two {
+    grid-column: 2/3;
+    grid-row: 1;
+  }
+  .cards__card--three {
+    grid-column: 3/4;
+    grid-row: 1;
+  }
+}
 @media (min-width: 992px) {
   .header {
     display: grid;
@@ -466,6 +487,22 @@ h1.company-name {
   }
   .hamburger {
     display: none;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .cards__card--one {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+  .cards__card--two {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+  .cards__card--three {
+    grid-row: 3/4;
+    grid-column: 1/-1;
   }
 }
 @media (min-width: 1200px) {

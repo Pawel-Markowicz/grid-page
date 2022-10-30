@@ -357,7 +357,6 @@ h1.company-name {
 	&__box{
 		display: grid;
 		grid-template-columns: repeat(9, 1fr);
-		
 		padding: 6em 2em;
 	}
 
@@ -431,6 +430,30 @@ h1.company-name {
 
 
 //------------- MEDIA QUERIES-------------- 
+
+// MEDIUM
+@media(min-width: 768px){
+	.cards{
+		display: grid;
+		&__box{
+			grid-template-columns: auto;
+			gap: 1em;
+		}
+
+		&__card--one{
+			grid-column: 1/2;
+			grid-row: 1;
+		}
+		&__card--two{
+			grid-column: 2/3;
+			grid-row: 1;
+		}
+		&__card--three{
+			grid-column: 3/4;
+			grid-row: 1;
+		}
+	}
+}
 
 // LARGE
 @media(min-width: 992px){
@@ -529,7 +552,30 @@ h1.company-name {
 	.hamburger{
 		display: none;
 	}
-}
+
+	.cards{
+		display: grid;
+		grid-template-columns: auto;
+			&__card--one{
+				grid-row: 1/2;
+				// dzięki temu rozciąga element na całą stronę
+				grid-column: 1/-1;
+			}
+	
+			&__card--two{
+				grid-row: 2/3;
+				grid-column: 1/-1;
+			}
+			
+			&__card--three{
+				grid-row: 3/4;
+				grid-column: 1/-1;
+			}
+	
+		}
+	}
+	
+
 
 @media (min-width: 1200px){
 	.header{
