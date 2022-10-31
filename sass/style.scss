@@ -490,6 +490,44 @@ h1.company-name {
 	}
 }
 
+.plans{
+	padding: 6em 2em;
+	background-color: $darker;
+
+	&__box{
+		margin: 1em 0;
+		padding: 2em 1em;
+		text-align: center;
+		border: 1px solid transparent;
+		border-radius: 8px;
+		background-color: $dark;
+		cursor: pointer;
+		transition: background-color .3s, border .3s;
+
+		&:hover{
+			background-color: $darker;
+			border: 1px solid $gold;
+		}
+	}
+
+
+	&__item{
+		margin: 1em 0;
+	}
+	&__item-icon{
+		width: 50px;
+	}
+	
+	&__item-name{
+		margin-top: 0;
+		margin-bottom: 1.5em;
+		font-size: 1.8rem;
+		color: $gold;
+	}
+
+	
+}
+
 //------------- MEDIA QUERIES--------------
 
 // SMALL
@@ -573,8 +611,25 @@ h1.company-name {
 			grid-column: 3/4;
 			grid-row: 1/2;
 		}
-
 		
+	}
+
+	.plans{
+		padding: 8em 2em;
+
+		&__box{
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+			align-items: center;
+		}
+
+		&__item{
+			margin: 0 1em;
+		}
+		&__item-name{
+			margin-top: 0;
+			margin-bottom: 0;
+		}
 	}
 }
 
